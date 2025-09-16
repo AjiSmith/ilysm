@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Safina Birthday - GIFT</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(135deg, #001f3f, #0074D9);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      color: #fff;
+    }
+    .gift-container {
+      position: relative;
+      width: 220px;
+      height: 220px;
+      cursor: pointer;
+      transition: transform 0.5s ease;
+      text-align: center;
+    }
+    .gift-box {
+      width: 100%;
+      height: 100%;
+      background: #2980b9;
+      border-radius: 10px;
+      position: relative;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+    }
+    .gift-lid {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      width: 100%;
+      height: 40px;
+      background: #3498db;
+      border-radius: 10px 10px 0 0;
+      transition: transform 0.7s ease;
+      transform-origin: bottom;
+    }
+    .gift-ribbon {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 100%;
+      background: #1abc9c;
+    }
+    .gift-open .gift-lid {
+      transform: rotateX(150deg);
+    }
+    .gift-text {
+      margin-top: 15px;
+      font-size: 18px;
+      font-weight: bold;
+      color: #f1f1f1;
+      text-shadow: 0 0 10px rgba(0,0,0,0.6);
+    }
+    .video-container {
+      display: none;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      width: 90%;
+      max-width: 800px;
+      max-height: 80vh;
+      background: #000;
+      border: 4px solid #1abc9c;
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(0,0,0,0.7);
+      overflow: hidden;
+      z-index: 10;
+    }
+    .video-container video {
+      width: 100%;
+      height: auto;
+      max-height: 80vh;
+      display: block;
+    }
+    .letter-container {
+      display: none;
+      position: fixed;
+      top: 10%;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 90%;
+      max-width: 600px;
+      height: 70%;
+      background: rgba(255,255,255,0.95);
+      color: #000;
+      border-radius: 15px;
+      box-shadow: 0 0 30px rgba(0,0,0,0.6);
+      padding: 20px;
+      overflow-y: auto;
+      z-index: 20;
+      animation: fadeIn 1s ease forwards;
+    }
+    .letter-container h2 {
+      text-align: center;
+      margin-bottom: 15px;
+      color: #0074D9;
+    }
+    .letter-container p {
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0; transform: translate(-50%, -10%);}
+      to {opacity: 1; transform: translate(-50%, 0);}
+    }
+  </style>
+</head>
+<body>
+  <div class="gift-container" id="gift">
+    <div class="gift-box"></div>
+    <div class="gift-lid"></div>
+    <div class="gift-ribbon"></div>
+    <div class="gift-text">TOUCH ME!</div>
+  </div>
+
+  <div class="video-container" id="videoBox">
+    <video id="memoryVideo" controls>
+      <source src="video.mp4" type="video/mp4">
+      Browser kamu tidak mendukung video.
+    </video>
+  </div>
+
+  <div class="letter-container" id="letterBox">
+    <h2>💙 For the Girl that always ready for me in every situation i had 💙</h2>
+    <p>
+      Dear Safina,<br>Walau kamu sering menganggap aku sebagai teman, aku menganggap kamu sebagai orang yang paling aku cinta.
+      Even kamu selalu merasa bersalah karena sering nyakitin perasaan aku, sebenarnya itu semua tidak terlalu penting. Karena...
+      Semua hal, semua perlakuan, semua sikap, dan semua perhatian yang kamu kasih untuk aku itu sudah cukup untuk menebus rasa sakit
+      yang menurut kamu telah membuat aku sakit.
+    </p>
+    <p>
+        Semua ini aku buat sepenuh hati untuk merayakan hari ulang tahun kamu, walau hanya sekedar melalui Website/Virtual. Semoga ini dapat
+        membuat kamu bahagia, semua akan aku usahakan untuk kamu, hanya saja dengan kondisi kita yang sekarang (tidak memiliki kejelasan) aku masih
+        membatasi perlakuan aku ke kamu. As you know, ketika aku sudah tidak membatasi perlakuan aku itu malah membuat kamu sakit hati. That's why aku lebih memilih
+        setuju dengan keputusan kamu. Mungkin memang akunya saja yang harus lebih mempelajari diri kamu.
+    </p>
+    <p>
+        Jikalau di masa depan nanti kita tidak dapat bersama lagi dan hilang tanpa kabar karena sibuk dengan dunia kita masing masing. Aku harap
+        kamu selalu bahagia dan tidak menyesali bahwasanya kita pernah bersama walau tanpa kejelasan. Dan jikalau kamu menemukan orang yang dapat
+        menggantikan posisi aku dalam menjaga kamu, mendukung kamu, menenangkanmu. Aku harap orang itu lebih baik dan dapat bertanggung jawab atas perannya sebagai kekasih kamu.
+        Sedih memang rasanya jika harus menuliskan hal hal seperti itu, namun pada dasarnya kita tidak punya kendali atas masa depan kita kalau kita tidak memperjuangkan masa depan itu.
+    </p>
+    <p>
+        Aku minta maaf atas kesalahan dan perilaku aku yang telah membuat kamu sakit atau kecewa selama dengan aku. Aku harap kamu dapat memaafkan kekurangan aku dan tidak membenci aku kedepannya.
+        I Love You Always, and Forever. You're the last girl i struggled. Even though now you always remind me that we are just friends, I always think you are the partner I love the most.
+        Aku selalu berharap kamu dapat membuka hati kamu lagi untuk aku, dan aku selalu berjuang sekeras yang aku bisa untuk membuktikan ke kamu dan diri aku bahwa aku pantas untuk mendapatkan hati
+        dari seorang wanita yang memberikan hal hal baru & warna yang indah dalam hidupku
+    </p>
+    <p>
+      Terima kasih sudah menjadi bagian terbaik dari hidupku. 💙
+    </p>
+  </div>
+
+  <script>
+    const gift = document.getElementById('gift');
+    const videoBox = document.getElementById('videoBox');
+    const memoryVideo = document.getElementById('memoryVideo');
+    const letterBox = document.getElementById('letterBox');
+
+    gift.addEventListener('click', () => {
+      gift.classList.add('gift-open');
+      setTimeout(() => {
+        videoBox.style.display = 'block';
+        memoryVideo.play();
+      }, 1000);
+    });
+
+    memoryVideo.addEventListener('ended', () => {
+      videoBox.style.display = 'none';
+      letterBox.style.display = 'block';
+    });
+  </script>
+
+</body>
+</html>
